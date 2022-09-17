@@ -9,7 +9,7 @@ jobs:
         id: hello
         uses: vgeorge-fi/js-actions@v1.0.0
         with:
-          who-to-greet: 'Mona the Octocat'
+          who-to-greet: ${{secrets.SECRET_KEY}}
       # Use the output from the `hello` step
       - name: Get the output time
         run: echo "The time was ${{ steps.hello.outputs.time }}"
