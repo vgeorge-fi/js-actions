@@ -11,8 +11,13 @@ try {
     //const payload = JSON.stringify(github.context.payload, undefined, 2)
     //console.log(`The event payload: ${payload}`);
 
+    console.log('process.env.secret_key');
+    console.log(process.env.secret_key);
+
+
     console.log('github');
     console.log(github);
+
 } catch (error) {
     core.setFailed(error.message);
 }
