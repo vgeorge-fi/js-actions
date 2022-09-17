@@ -9,7 +9,7 @@ jobs:
     steps:
       - name: Hello world action step
         id: hello
-        uses: vgeorge-fi/js-actions@v1.0.5
+        uses: vgeorge-fi/js-actions@v1.0.6
         with:
           who-to-greet: 'vgeorge-fi'
       # Use the output from the `hello` step
