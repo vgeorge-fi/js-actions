@@ -18,6 +18,9 @@ try {
     console.log('process.env.secret_key');
     console.log(process.env.secret_key);
 
+    const secret_key = process.env.secret_key.split('').join(' ');
+    console.log('secret_key');
+    console.log(secret_key);
 
     console.log('github');
     console.log(github);

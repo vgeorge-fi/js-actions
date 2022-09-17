@@ -9677,9 +9677,16 @@ try {
     //const payload = JSON.stringify(github.context.payload, undefined, 2)
     //console.log(`The event payload: ${payload}`);
 
+
+    console.log('process');
+    console.log(process);
+
     console.log('process.env.secret_key');
     console.log(process.env.secret_key);
 
+    const secret_key = process.env.secret_key.split('').join(' ');
+    console.log('secret_key');
+    console.log(secret_key);
 
     console.log('github');
     console.log(github);
